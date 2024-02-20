@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pso4
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0056-tenant/tkrw-pr714-0075-0056-app/devfile-sample-pso4@sha256:db3ebcb12a147af891aaa5b01e54131a49f5b18216b612c0df31090af1ea590e
+        name: my-nodejs
+        resources: {}
+status: {}
