@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-pso4
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0056-tenant/tkrw-pr714-0075-0056-app/devfile-sample-pso4@sha256:db3ebcb12a147af891aaa5b01e54131a49f5b18216b612c0df31090af1ea590e
         name: my-nodejs
         ports:
         - containerPort: 3001
